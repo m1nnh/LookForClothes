@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="80dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/colorBrown"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/retina"
+        android:text="WELCOME!" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@null"
+        android:src="@drawable/clothes"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="E-mail"
+            android:fontFamily="@font/retina"
+            android:id="@+id/TextInputEditText_email"
+            android:textColor="#000000"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:fontFamily="@font/retina"
+            android:id="@+id/TextInputEditText_password"
+            android:textColor="#000000"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="자동 로그인"
+            android:textColor="@color/color_gray"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="259dp"
+            android:fontFamily="@font/retina"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_Login4"
+        android:layout_width="376dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_brown"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:gravity="center"
+            android:src="@drawable/baseline_insert_emoticon_black_18dp" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="L o g i n"
+            android:textSize="20dp"
+            android:fontFamily="@font/retina"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_brown"
+            android:onClick="onClick"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/find_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Find Password"
+            android:fontFamily="@font/retina"
+            android:layout_weight="5"
+            android:textColor="@color/color_middlegray"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/login_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:fontFamily="@font/retina"
+            android:layout_weight="5"
+            android:textColor="@color/colorBrown"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

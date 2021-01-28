@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "628317644531",
+    "firebase_url": "https://capstone-834d3.firebaseio.com",
+    "project_id": "capstone-834d3",
+    "storage_bucket": "capstone-834d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628317644531:android:fcea79a15663dedb2cb986",
+        "android_client_info": {
+          "package_name": "com.sangmin.LookForClothes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628317644531-aouijfrrjum7648fo85vb9jr86bfr8hl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sangmin.LookForClothes",
+            "certificate_hash": "f43507af2d979cea0f2d32256d00911416b0fb18"
+          }
+        },
+        {
+          "client_id": "628317644531-9hgrq7rqu4nef403kenf9kt2v793r8uq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sangmin.LookForClothes",
+            "certificate_hash": "32c077578ded5dbfb3b7b382a2076dbcc71b9b13"
+          }
+        },
+        {
+          "client_id": "628317644531-264blej3rdfq954v195ffq5bq9qbeqmq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdKuFi1YZ291d-a9X_51Xa9Qf3W_EOOqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628317644531-264blej3rdfq954v195ffq5bq9qbeqmq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628317644531:android:a443a9ae4c626bfb2cb986",
+        "android_client_info": {
+          "package_name": "com.sangmin.capstone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628317644531-31j6n8saghan8jc94i49gmp1evtqup5b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sangmin.capstone",
+            "certificate_hash": "f96e066fa3d40d0b3dc02f2837f28ff6fa18c8d5"
+          }
+        },
+        {
+          "client_id": "628317644531-264blej3rdfq954v195ffq5bq9qbeqmq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdKuFi1YZ291d-a9X_51Xa9Qf3W_EOOqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628317644531-264blej3rdfq954v195ffq5bq9qbeqmq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sangmin.LookForClothes">
+    <!-- Camera and storage permission will be required -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/clothes"
+        android:label="옷찾사"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCMAJfZU8eqPvQ-ssLgHYrQOH0SyE2Z_no" />
+
+        <activity android:name=".ChangePasswordActivity"></activity>
+        <activity android:name=".FindPasswordActivity" />
+        <activity android:name=".DBsearch" />
+        <activity android:name=".GoogleMaps"/>
+        <activity android:name=".MyPageActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".TextCameraActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- add in application tag -->
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

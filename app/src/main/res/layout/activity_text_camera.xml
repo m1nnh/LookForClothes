@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/color_white"
+    tools:context=".TextCameraActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorBrown">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#fff">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:background="@color/colorBrown">
+                    <TextView
+                        android:text="Product Name"
+                        android:fontFamily="@font/retina"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_white"
+                        android:drawableLeft="@drawable/clothes_icon"
+                        android:drawablePadding="20dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="10dp"/>
+                    <!-- the scanned text from image will display here-->
+                    <EditText
+                        android:id="@+id/editText"
+                        android:hint=""
+                        android:autoLink="all"
+                        android:background="@null"
+                        android:padding="5dp"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="8.6" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#fff">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:background="@color/colorBrown">
+                    <TextView
+                        android:text="Image Recognition"
+                        android:fontFamily="@font/retina"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_white"
+                        android:drawableLeft="@drawable/clothes_icon"
+                        android:drawablePadding="20dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="10dp"/>
+                    <!-- the image taken will be displayed here-->
+                    <ImageView
+                        android:id="@+id/imageIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="140dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:paddingLeft="15dp">
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Size (사이즈)"
+            android:fontFamily="@font/retina"
+            android:textSize="18sp"
+            android:background="@drawable/btn_white"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/clothes_icon"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/click"/>
+        <Spinner
+            android:id="@+id/spinner1"
+            android:theme="@style/SpinnerTheme"
+            android:spinnerMode="dialog"
+            android:prompt="@string/size"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:padding="3dp"
+            android:entries="@array/size"
+            android:textColor="#000000">
+        </Spinner>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/size_check"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginLeft="220dp"
+        android:src="@drawable/check_mark"
+        android:background="@null" />
+    <TextView
+        android:id="@+id/size_result"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/color_middlegray"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/retina"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="410dp"
+        android:background="@drawable/spinner_background"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:paddingLeft="15dp">
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Color (색상)"
+            android:fontFamily="@font/retina"
+            android:textSize="18sp"
+            android:background="@drawable/btn_white"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/clothes_icon"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/click"/>
+        <Spinner
+            android:id="@+id/spinner2"
+            android:theme="@style/SpinnerTheme"
+            android:spinnerMode="dialog"
+            android:prompt="@string/color"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:padding="3dp"
+            android:entries="@array/color"
+            android:textColor="#000000">
+        </Spinner>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/color_check"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="220dp"
+        android:src="@drawable/check_mark"
+        android:background="@null" />
+    <TextView
+        android:id="@+id/color_result"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/color_middlegray"
+        android:paddingLeft="10dp"
+        android:fontFamily="@font/retina"
+        android:textSize="20sp"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="250dp"
+        android:background="@drawable/spinner_background"/>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_brown"
+        android:clickable="true"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="565dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_brown"
+            android:stateListAnimator="@null"
+            android:text="Search"
+            android:fontFamily="@font/retina"
+            android:onClick="onClick"
+            android:textColor="#ffffff"
+            android:textSize="19sp" />
+    </LinearLayout>
+</RelativeLayout>

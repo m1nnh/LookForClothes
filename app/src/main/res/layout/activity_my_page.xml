@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".MyPageActivity"
+    android:orientation="vertical"
+    android:background="@color/color_white">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/colorBrown"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/retina"
+        android:text="MY PAGE" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@null"
+        android:paddingTop="10dp"
+        android:src="@drawable/clothes"
+        android:gravity="center"
+        >
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+        <TextView
+            android:text="Keep List"
+            android:fontFamily="@font/retina"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_brown"
+            android:drawableLeft="@drawable/clothes_icon2"
+            android:drawablePadding="20dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView" />
+    </LinearLayout>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/btn_keep"
+        android:text="Confirm Keep List"
+        android:fontFamily="@font/retina"
+        android:textColor="@color/color_white"
+        android:background="@drawable/btn_brown"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/btn_delete"
+        android:text="Delete Keep List"
+        android:fontFamily="@font/retina"
+        android:textColor="@color/color_white"
+        android:background="@drawable/btn_brown"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn_changepassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Change Password"
+            android:fontFamily="@font/retina"
+            android:layout_weight="5"
+            android:textColor="@color/color_middlegray"
+            android:textSize="22sp"
+            android:background="@color/color_white"/>
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Logout"
+            android:fontFamily="@font/retina"
+            android:layout_weight="5"
+            android:textColor="@color/colorBrown"
+            android:textSize="22sp"
+            android:background="@color/color_white"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
